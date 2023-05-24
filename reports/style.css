@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+font-family: sans-serif;
+background: url(bg.jpg);
+
+}
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: red;
+color: greenyellow;
+position: fixed;
+z-index: 1;
+width: 100%;
+}
+.brand-title{
+font-size: 1.5rem;
+margin: .5rem;
+}
+.navbar-link ul{
+margin: 0;
+padding: 0;
+display: flex;
+}
+.navbar-link li a{
+text-decoration: none;
+color: black;
+padding: 1rem;
+display: block;
+}
+.navbar-link li{
+list-style: none;
+}
+.navbar-link li:hover{
+background-color: grey;
+}
+.toggle-button{
+position: absolute;
+top: .75rem;
+right: 1rem;
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 30px;
+height: 21px;
+}
+.toggle-button .bar{
+height: 3px;
+width: 100%;
+background-color: blue;
+border-radius: 10px;
+}
+.com{
+background-color: ghostwhite;
+height:200px;
+width: 100%;
+text-align: center;
+}
+.com img{
+width: 60%;
+margin-top: 40px;
+padding-left: 15px;
+}
+/* -------first body------------- */
+
+/* --adv-------- */
+adv{
+    background-color: gainsboro;
+    height:200px;
+    width:100%;
+    justify-content: center;
+    }
+    .adv img{
+    width: 60%;
+    margin-top: 40px;
+    padding-left: 15px;
+    }
+.pop{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.pop-1{
+width: 550px;
+position: relative;
+}
+.pop-1 img{
+width: 530px;
+height:380px;
+margin:5px;
+}
+
+.pop-2{
+display: flex;
+max-width: 700px;
+flex-wrap: wrap;
+width: 100%;
+
+}
+.pop-3{
+position: relative;
+}
+.pop-3 img{
+width:340px;
+height: 180px;
+margin: 5px;
+}
+.fox{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.fox-1{
+width: 408px;
+margin: 5px;
+background-color: aliceblue;
+margin-top: 20px;
+box-shadow: 2px 2 2px 2p 2px;
+}
+.fox-1 img{
+width: 100px;
+height: 100px;
+float: left;
+margin-right: 10px;
+margin-bottom: 2px;
+margin:6px;
+padding: 2px;
+border-radius: 10px;
+text-align: center;
+}
+.adv{
+display: flex;
+justify-content: center;
+}
+.adv-1 img{
+width: 650px;
+height: 180px;
+}
+/* ----h-glo------ */
+ .glo-1{
+  color: blue;
+  text-decoration: underline;
+  padding-left:40px;
+  margin-top: 30px;
+ }
+ .xo{
+ text-align: center;
+ color: plum;
+ }
+ /* --------zoom---------------- */
+ .zoom{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+ }
+ .zoom-1{
+width: 400px;
+margin: 10px;
+
+margin-top: 20px;
+background: gray;
+position: relative;
+ }
+ .zoom-1 img{
+ width: 400px;
+ height: 200px;
+ }
+ /* -----news-news------------ */
+ .news-news{
+    color: blue;
+    text-decoration: underline;
+    padding-left:40px;
+    margin-top: 30px;
+ }
+/* -------cool--------- */
+.cool{
+position: absolute;
+bottom: 2px;
+color: #fff;
+padding-right:20px ;
+padding-left: 20px;
+font-size:larger;
+line-height: 30px;
+}
+/* ------under-------- */
+.under{
+    position: absolute;
+    bottom: 2px;
+    color: #fff;
+    padding-right:20px ;
+    padding-left: 20px;
+    font-size:bold;
+    font-weight: 45px;
+    line-height: 25px;
+    font-weight: 30px;
+    }
+    /* ------well----------- */
+    .well{
+        position: absolute;
+        bottom: 8px;
+        color: #fff;
+        padding-right:20px ;
+        padding-left: 18px;
+        font-size: larger;
+        line-height: 25px;
+        font-weight: 30px;
+        }
+ .cup{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin-top: 20px;
+ }
+ .cup-1{
+width: 450px;
+margin: 7px;
+position: relative;
+ }
+ .cup-1 img{
+ width: 450px;
+ height: 300px;
+ }
+ .cup-3{
+display: flex;
+margin: 7px;
+ }
+ .cup-3 img{
+ width:80px ;
+ height: 88px;
+ margin: 4px 7px;
+ border-radius: 10px;
+ }
+ .cup-cup{
+ width: 300px;
+ }
+ footer{
+background: black;
+ }
+ footer p{
+ color: aliceblue;
+ text-align: center;
+ }
+/* --------nav median------------ */
+@media (max-width:400px) {
+    .toggle-button{
+   display: flex;
+    }
+   .navbar-link{
+   display: none;
+   width: 100%;
+   }
+   .navbar{
+   flex-direction: column;
+   align-items: flex-start;
+   }
+   .navbar-link ul{
+   width: 100%;
+   flex-direction: column;
+   }
+   .navbar-link li {
+   text-align: center;
+   }
+   .navbar-link li a{
+   padding: 20px;
+   }
+   .navbar-link.active{
+   display: flex;
+   }
+   .pop-1 img{
+   width: 100%;
+   }
+   .pop-3 img{
+   width: 100%;
+   }
+/* ---------madia qua-------------------- */
+.pop-1{
+ width: 300px;
+}
+.pop-1 img{
+width: 100%;
+height: 200px;
+}
+.pop-3{
+width: 300px;
+}
+.pop-3 img{
+width: 100%;
+height: 200px;
+}
+.fox-1{
+    width: 300px;
+   }
+   .fox-1 img{
+   width: 100%;
+   height: 200px;
+   }
+   .zoom-1{
+    width: 300px;
+   }
+   .zoom-1 img{
+   width: 100%;
+   height: 200px;
+   } 
+   .cup-1{
+    width: 300px;
+   }
+   .cup-1 img{
+   width: 100%;
+   height: 200px;
+   } 
+}
